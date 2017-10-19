@@ -1,4 +1,5 @@
 import * as express from 'express';
+import { buildUserSchema } from './Mongoose';
 
 class App {
   public express;
@@ -14,6 +15,7 @@ class App {
       res.json({
         message: 'Hello World!'
       });
+      buildUserSchema();
     });
     this.express.use('/', router);
   }
