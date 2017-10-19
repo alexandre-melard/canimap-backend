@@ -4,7 +4,7 @@
   "description": "canimap backend server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "node_modules/nodemon/bin/nodemon.js dist/index.js"
   },
@@ -20,9 +20,11 @@
   "homepage": "https://github.com/mylen/canimap-backend#readme",
   "dependencies": {
     "@types/mocha": "^2.2.43",
+    "@types/mongoose": "^4.7.24",
     "@types/node": "^8.0.46",
     "babel-cli": "^6.26.0",
     "express": "^4.16.2",
+    "mongoose": "^4.12.3",
     "nodemon": "^1.12.1"
   }
 }
