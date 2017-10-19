@@ -1,7 +1,9 @@
 import { Schema, model, connect } from 'mongoose';
 
 export function buildUserSchema() {
-    connect('localhost');
+    connect('localhost', {
+        useMongoClient: true        
+    });
     const userSchema = new Schema({
         id: Number,
         username: String,
