@@ -1,0 +1,28 @@
+{
+  "name": "canimap",
+  "version": "1.0.0",
+  "description": "canimap backend server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node_modules/nodemon/bin/nodemon.js dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mylen/canimap-backend.git"
+  },
+  "author": "Alexandre Mélard <alexandre@melard.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mylen/canimap-backend/issues"
+  },
+  "homepage": "https://github.com/mylen/canimap-backend#readme",
+  "dependencies": {
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^8.0.46",
+    "babel-cli": "^6.26.0",
+    "express": "^4.16.2",
+    "nodemon": "^1.12.1"
+  }
+}
