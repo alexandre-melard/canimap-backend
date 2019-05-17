@@ -71,6 +71,12 @@ const authCheck = jwt({
     algorithms: ['RS256']
 });
 
+app.post('/api/logs', authCheck, (req, res) => {
+    var log = req.body;  
+    console.log("[CLIENT LOG][" + log.email + "]: " + log.content);
+    res.json(log);
+});
+
 app.post('/api/users', authCheck, (req, res) => {
     var lUser = req.body;  
     console.log("[POST] request with user: " + JSON.stringify(lUser));
